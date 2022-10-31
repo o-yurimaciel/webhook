@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
 })
 
 app.post('/webhook', (req, res) => {
-  console.log(req)
-  res.send("Ok!")
+  console.log('chegou requisição aqui')
+  res.send(req)
 })
 
 app.listen(port, () => {
