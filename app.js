@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
 
 app.post('/webhook', (req, res) => {
   console.log('chegou requisição aqui')
-  console.log(req)
+  const data = req.data ? JSON.parse(req.data) : null
+  console.log(data)
   res.send("Ok")
 })
 
