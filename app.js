@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 
 app.post('/webhook', (req, res) => {
   console.log('chegou requisição aqui')
-  console.log(req.IncomingMessage)
+  console.log(req._events.data)
   res.send("Ok")
 })
 
