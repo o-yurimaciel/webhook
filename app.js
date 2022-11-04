@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
 })
 
 app.post('/webhook', (req, res) => {
-  console.log('chegou requisição aqui')
-  console.log(req._events.data)
+  console.log('Web hook received!')
+  console.log(req)
   res.send("Ok")
 })
 
