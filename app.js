@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
 
 app.post('/webhook', (req, res) => {
   console.log('chegou requisição aqui')
-  res.send(req)
+  console.log(req.body)
+  res.send("Ok")
 })
 
 app.listen(port, () => {
